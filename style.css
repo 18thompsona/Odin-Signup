@@ -1,0 +1,97 @@
+@font-face {
+    font-family: thor;
+    src: url(Assets/Norse-Bold.otf);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.sidebar{
+    background-image: url(Assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(10, 10, 10, .50);
+    color: white;
+    font-size: 6rem;
+
+    position: relative;
+    top: 20vh;
+}
+
+#logo {
+    width: 150px;
+}
+
+#logo-text{
+    font-family: thor;
+}
+
+#credit {
+    font-size: 1rem;
+    color:white;
+    justify-self: flex-end;
+}
+
+a{
+    color: inherit;
+}
+
+.mainbar{
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2rem;
+    /* padding: 0;
+    margin: 0; */
+}
+
+.pitch{
+    width: 90%;
+    padding-bottom: 5rem;
+    line-height: 1.5;
+}
+
+.form{
+    background-color: white;
+}
+
+.signup{
+    width: 90%;
+    padding-top: 2rem;
+}
+
+.action-button{
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    background-color: #596D48;
+    border-radius: 10px;
+    border: none;
+}
+
+.left{
+    padding-left: 3rem;
+}
