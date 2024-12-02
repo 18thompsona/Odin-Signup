@@ -26,34 +26,52 @@
                 <h1>You <em>know</em> you want to.</h1>
             </div>
 
-            <div class="form left">
-                <h1>Let's do this!</h1>
+            <div class="form">
+                <div class="form-bg">
+                <h1 class="left">Let's do this!</h1>
 
-                <form action="#" method="post">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="" id="first-name">
-                    
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="" id="last-name">
+                <form id="form-fields" class="left" action="#" method="post">
+                    <div class="form-item">
+                        <label for="first-name">First Name</label>
+                        <input class="form-input" type="text" name="" id="first-name" required>                        
+                    </div>
 
-                    <label for="email">Email</label>
-                    <input type="email" name="" id="email">
+                    <div class="form-item">
+                        <label for="last-name">Last Name</label>
+                        <input class="form-input" type="text" name="" id="last-name"required>
+                    </div>
 
-                    <label for="phone-num">Phone Number</label>
-                    <input type="tel" name="" id="phone-num">
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input class="form-input" type="email" name="" id="email"required>
+                    </div>
 
-                    <label for="password">Password</label>
-                    <input type="password" name="" id="password">
+                    <div class="form-item">
+                        <label for="phone-num">Phone Number</label>
+                        <input class="form-input" type="tel" name="" id="phone-num"required>
+                    </div>
 
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" name="" id="confirm-password">
+                    <div class="form-item">
+                        <label for="password">Password</label>
+                        <input class="form-input" id="password" type="password" name="" id="password"required>
+                        <small id="error-message">* Passwords do not match</small>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input class="form-input" id="confirmPassword" type="password" name="" id="confirm-password"required>
+                    </div>
+
+                    </div>
+
+                    <div class="signup left">
+                        <button class="action-button" type="submit">Create Account</button>
+                    </div>
                 </form>
             </div>
 
-            <div class="signup left">
-                <button class="action-button" type="button">Create Account</button>
-                <h2>Already have an account? <a href="#">Log in</a></h2>
-            </div>
+            <h3 class="left">Already have an account? <a class="action-link" href="#">Log in</a></h3>
+
         </div>
 
 

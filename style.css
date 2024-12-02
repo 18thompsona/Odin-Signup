@@ -8,6 +8,7 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 
@@ -16,7 +17,7 @@ body{
     background-size:cover;
     background-position: center;
     height: 100vh;
-    width: 40vw;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +39,7 @@ body{
 }
 
 #logo {
-    width: 150px;
+    width: 100px;
 }
 
 #logo-text{
@@ -60,22 +61,67 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 70vw;
 }
 
 h1{
-    font-size: 2rem;
-    /* padding: 0;
-    margin: 0; */
+    font-size: 1.5rem;
 }
 
 .pitch{
     width: 90%;
-    padding-bottom: 5rem;
+    padding-bottom: 1em;
     line-height: 1.5;
 }
 
 .form{
+    
+    
+}
+
+.form-bg{
     background-color: white;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+
+#form-fields {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 1rem;
+    
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    margin: 0em 5em 1em 0em;
+    width: 30%;
+    opacity: 80%;
+    font-size: 1.0em;
+}
+
+.form-input{
+    height: 2em;
+    border-radius: 5px;
+    font-size: 1.0em;
+    padding-left: .5em;
+    border: solid rgb(189, 189, 189) 1px;
+}
+
+#error-message{
+    color: red;
+    display: none;
+}
+
+.invalid{
+    border: 2px solid red;
+}
+
+input:invalid:focus{
+    border: 2px solid red;
 }
 
 .signup{
@@ -85,13 +131,20 @@ h1{
 
 .action-button{
     width: 20rem;
-    height: 5rem;
-    font-size: 2rem;
+    height: 4rem;
+    font-size: 1.5rem;
     background-color: #596D48;
     border-radius: 10px;
     border: none;
+    color: white;
+}
+
+.action-link{
+    color: #596D48;
+    text-decoration: none;
 }
 
 .left{
     padding-left: 3rem;
+    
 }
